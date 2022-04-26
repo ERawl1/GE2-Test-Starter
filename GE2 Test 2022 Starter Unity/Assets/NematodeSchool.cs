@@ -14,7 +14,11 @@ public class NematodeSchool : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        // Put your code here
+        for (int i = 0; i < count; i++)
+        {
+            Instantiate(prefab, new Vector3(0, radius, 0), Quaternion.identity);
+
+        }
     }
 
     // Update is called once per frame
